@@ -1,0 +1,25 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rs1257/cypress-automation-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rs1257/cypress-automation-framework/issues"
+  },
+  "homepage": "https://github.com/rs1257/cypress-automation-framework#readme",
+  "devDependencies": {
+    "cypress": "^12.0.1"
+  },
+  "dependencies": {
+    "typescript": "^4.9.3"
+  }
+}
