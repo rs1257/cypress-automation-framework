@@ -8,8 +8,8 @@
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
     "prepare": "husky install",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "cypress:dev": "cypress open",
+    "cypress:ci": "cypress run"
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx,json,css,scss,md,yml,yaml}": [
