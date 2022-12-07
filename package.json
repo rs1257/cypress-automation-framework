@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -16,10 +18,13 @@
     "url": "https://github.com/rs1257/cypress-automation-framework/issues"
   },
   "homepage": "https://github.com/rs1257/cypress-automation-framework#readme",
-  "devDependencies": {
-    "cypress": "^12.0.1"
-  },
   "dependencies": {
-    "typescript": "^4.9.3"
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "eslint": "^8.29.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.0",
+    "typescript": "^4.9.3",
+    "cypress": "^12.0.1"
   }
 }
