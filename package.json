@@ -5,8 +5,19 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "prepare": "husky install",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,css,scss,md,yml,yaml}": [
+      "npm run format:fix"
+    ],
+    "**/*.{ts,tsx}": [
+      "npm run lint"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,10 +32,12 @@
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.45.1",
     "@typescript-eslint/parser": "^5.45.1",
+    "cypress": "^12.0.1",
     "eslint": "^8.29.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.0",
-    "typescript": "^4.9.3",
-    "cypress": "^12.0.1"
+    "typescript": "^4.9.3"
   }
 }
